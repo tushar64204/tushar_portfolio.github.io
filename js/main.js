@@ -274,4 +274,13 @@
 
 
 })(jQuery);
-
+document.querySelectorAll('.website-links a').forEach((link) => {
+	link.addEventListener('mouseover', () => {
+	  link.style.color = '#0056b3';
+	});
+  
+	link.addEventListener('mouseout', () => {
+	  link.style.color = '#0073e6';
+	});
+  });
+  
